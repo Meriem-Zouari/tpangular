@@ -1,0 +1,9 @@
+<!--property binding -->
+<div [style.backgroundColor]="color" > {{color ? color : "orange"}}!</div>
+<div>
+  <!--property binding -->
+  <input #inputColor (change)="changeColor(inputColor)" type="text" class="form-contol">
+  <!--event binding -->
+  <button (click)="default()">reset</button>
+
+</div>

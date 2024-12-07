@@ -1,0 +1,6 @@
+<app-grandchildofthirdchild (sendFavoriteColor)="processColor($event)" [filsProperty]="color"></app-grandchildofthirdchild>
+
+<div [style.backgroundColor]="color">
+  color: {{color}}
+</div>
+<input [(ngModel)]="color" type="text">

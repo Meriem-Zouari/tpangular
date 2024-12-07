@@ -1,0 +1,17 @@
+<p [ngStyle]="{
+  'color' : color,
+  'font-size' : size,
+  'font-family' : font}"
+>miniworld works!</p>
+
+<label>Text Color:</label>
+<input type="text" class="form-control"[(ngModel)]="color">
+<label>Font Size:</label>
+<input class="form-control" #sizeInput type="number" (change)="changeSize(+sizeInput.value)" >
+
+<label>Font Family:</label>
+<div>
+  <button class="btn btn-outline-primary" (click)="changeFont('Arial')">Arial</button>
+  <button class="btn btn-outline-secondary" (click)="changeFont('Impact')">Impact  </button>
+  <button class="btn btn-outline-success" (click)="changeFont('Times New Roman')">Times New Roman</button>
+</div>
