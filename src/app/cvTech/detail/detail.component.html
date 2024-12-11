@@ -1,0 +1,14 @@
+<div *ngIf="personne" >
+
+    <h3>Détails du CV</h3>
+
+    <img [src]="personne.path"  alt="Photo">
+    <p><strong>Nom complet :</strong> {{ personne.firstname }} {{ personne.name }}</p>
+    <p><strong>Age :</strong> {{ personne.age }} ans</p>
+    <p><strong>CIN :</strong> {{ personne.cin }}</p>
+    <p><strong>Poste :</strong> {{ personne.job }}</p>
+
+
+    <button (click)="deleteCv()" class="delete-btn">Supprimer</button>
+  </div>
+  

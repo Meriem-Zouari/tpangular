@@ -1,10 +1,10 @@
 export class Personne {
-  id : Number;
+  id : number;
   name : string;
   firstname : string;
-  age : Number;
+  age : number;
   path : string;
-  cin : Number;
+  cin : number;
   job : string;
 
   constructor(id=0,name='',firstname='',age=0,path='',cin=1,job=''){

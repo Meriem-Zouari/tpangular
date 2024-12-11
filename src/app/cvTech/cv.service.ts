@@ -19,5 +19,15 @@ export class CvService {
   getPersonnes():Personne[]{
     return this.personnes;
   }
+  getPersonneById(id : number):Personne | undefined{
+    const personne = this.personnes.find( personne =>{
+      return personne.id == id
+    });
+    return personne;
+  }
+
+  deleteCv(id: number): void {
+    this.personnes = this.personnes.filter((personne) => personne.id !== id);
+  }
 
 }

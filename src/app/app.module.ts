@@ -15,6 +15,8 @@ import { MiniworldComponent } from './miniworld/miniworld.component';
 import { RainbowComponent } from './rainbow/rainbow.component';
 import { DefaultImagePipe } from './cvTech/default-image.pipe';
 import { EmbaucheComponent } from './cvTech/embauche/embauche.component';
+import { DetailComponent } from './cvTech/detail/detail.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -32,6 +34,8 @@ import { EmbaucheComponent } from './cvTech/embauche/embauche.component';
     RainbowComponent,
     DefaultImagePipe,
     EmbaucheComponent,
+    DetailComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
