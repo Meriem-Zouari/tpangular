@@ -6,7 +6,7 @@
   <div class="alert alert-danger" *ngIf="InputMail.invalid && InputMail.dirty" >your email is invalid</div>
 
   <label for="pwd">
-    password
+    Password
   </label>
   <input  minlength="4" ngModel type="password" required  name="password"  class="form-control" id="pwd" #pwdInput="ngModel">
   <div class="alert alert-danger" *ngIf="pwdInput.invalid && pwdInput.touched" >the password must have 4 caracters at least</div>
